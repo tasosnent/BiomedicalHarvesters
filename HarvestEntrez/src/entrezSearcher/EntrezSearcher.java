@@ -5,10 +5,10 @@
  */
 package entrezSearcher;
 
-//add httpcomponents-client-4.5.1 jars
-// httpcore-4.4.3.jar
-// httpclient-4.5.1.jar
-// commons-logging-1.2.jar
+// add httpcomponents-client-4.5.1 jars
+// add httpcore-4.4.3.jar
+// add httpclient-4.5.1.jar
+// add commons-logging-1.2.jar
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileWriter;

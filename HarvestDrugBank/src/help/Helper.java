@@ -13,7 +13,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import static java.lang.System.exit;
 import java.nio.file.FileVisitResult;
@@ -26,22 +25,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
-// Add Tasks\00 Logs etc\Libs\gson-2.0.jar
+// Add gson-2.0.jar
 import com.google.gson.GsonBuilder;
 import java.text.SimpleDateFormat;
-import java.util.HashSet;
-import java.util.Set;
-// Add Tasks\00 Logs etc\Libs\httpcomponents-client-4.5.1\lib\*.jar
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
-// Add Tasks\00 Logs etc\Libs\json-simple-1.1.1.jar
+// Add json-simple-1.1.1.jar
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ParseException;
-// Add Tasks\00 Logs etc\Libs\commons-io\commons-io\2.4\commons-io-2.4.jar
+// Add commons-io\commons-io\2.4\commons-io-2.4.jar
 import static org.apache.commons.io.FileUtils.copyFile;
 
 

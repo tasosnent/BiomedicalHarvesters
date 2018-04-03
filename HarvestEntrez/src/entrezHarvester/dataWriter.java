@@ -36,7 +36,7 @@ import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 //add lucene-analyzers-common-5.3.1.jar
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
-//lucene-queryparser-5.3.1.jar
+//add lucene-queryparser-5.3.1.jar
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.ConstantScoreQuery;
 import org.apache.lucene.search.LRUQueryCache;

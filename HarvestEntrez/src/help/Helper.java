@@ -27,24 +27,24 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
-// Add Tasks\00 Logs etc\Libs\gson-2.0.jar
+// Add gson-2.0.jar
 import com.google.gson.GsonBuilder;
 import java.text.SimpleDateFormat;
 import java.util.HashSet;
 import java.util.Set;
-// Add Tasks\00 Logs etc\Libs\httpcomponents-client-4.5.1\lib\*.jar
+// Add httpcomponents-client-4.5.1\lib\*.jar
 // httpcore-4.4.3.jar
 import org.apache.http.HttpResponse;
 // httpclient-4.5.1.jar
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
-// Add Tasks\00 Logs etc\Libs\json-simple-1.1.1.jar
+// Add json-simple-1.1.1.jar
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.json.simple.parser.ParseException;
-// Add Tasks\00 Logs etc\Libs\commons-io\commons-io\2.4\commons-io-2.4.jar
+// Add commons-io\commons-io\2.4\commons-io-2.4.jar
 import static org.apache.commons.io.FileUtils.copyFile;
 
 
@@ -57,6 +57,12 @@ import static org.apache.commons.io.FileUtils.copyFile;
  */
 public class Helper {
     public static boolean debugMode = true;
+    /**
+     * Reads a JSON file into a JSONObject
+     * 
+     * @param filePath  The path for the file to read
+     * @return          The JSONOnject read
+     */
     public static JSONObject readJsonFile(String filePath) {
         JSONObject json = null;
             // open input stream filePath.txt for reading purpose.
