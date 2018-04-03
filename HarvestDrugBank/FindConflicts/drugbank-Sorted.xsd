@@ -1,0 +1,888 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+<?xml version="1.0" encoding="UTF-8"?>
+</xs:schema>
+    targetNamespace="http://www.drugbank.ca" xmlns="http://www.drugbank.ca">
+    <xs:simpleType name="state-type">
+    <xs:simpleType name="product-source-type">
+    <xs:simpleType name="product-country-type">
+    <xs:simpleType name="polypeptide-external-identifier-resource-type">
+    <xs:simpleType name="known-action-type">
+    <xs:simpleType name="group-type">
+    <xs:simpleType name="external-link-resource-type">
+    <xs:simpleType name="external-identifier-resource-type">
+    <xs:simpleType name="experimental-property-kind-type">
+    <xs:simpleType name="drugbank-salt-id-value">
+    <xs:simpleType name="drugbank-metabolite-id-value">
+    <xs:simpleType name="drugbank-drug-id-value">
+    <xs:simpleType name="calculated-property-source-type">
+    <xs:simpleType name="calculated-property-kind-type">
+    <xs:group name="interactant-group">
+    <xs:element name="drugbank" type="drugbank-type">
+    <xs:complexType name="transporter-type">
+    <xs:complexType name="transporter-list-type">
+    <xs:complexType name="textbook-type">
+    <xs:complexType name="textbook-list-type">
+    <xs:complexType name="target-type">
+    <xs:complexType name="target-list-type">
+    <xs:complexType name="synonym-type">
+    <xs:complexType name="synonym-list-type">
+    <xs:complexType name="snp-effect-type">
+    <xs:complexType name="snp-effect-list-type">
+    <xs:complexType name="snp-adverse-drug-reaction-type">
+    <xs:complexType name="snp-adverse-drug-reaction-list-type">
+    <xs:complexType name="sequence-type">
+    <xs:complexType name="sequence-list-type">
+    <xs:complexType name="salt-type">
+    <xs:complexType name="salt-list-type">
+    <xs:complexType name="reference-list-type">
+    <xs:complexType name="reaction-type">
+    <xs:complexType name="reaction-list-type">
+    <xs:complexType name="reaction-enzyme-type">
+    <xs:complexType name="reaction-enzyme-list-type">
+    <xs:complexType name="reaction-element-type">
+    <xs:complexType name="product-type">
+    <xs:complexType name="product-list-type">
+    <xs:complexType name="price-type">
+    <xs:complexType name="price-list-type">
+    <xs:complexType name="polypeptide-type">
+    <xs:complexType name="polypeptide-synonym-list-type">
+    <xs:complexType name="polypeptide-list-type">
+    <xs:complexType name="polypeptide-external-identifier-type">
+    <xs:complexType name="polypeptide-external-identifier-list-type">
+    <xs:complexType name="pfam-type">
+    <xs:complexType name="pfam-list-type">
+    <xs:complexType name="pdb-entry-list-type">
+    <xs:complexType name="pathway-type">
+    <xs:complexType name="pathway-list-type">
+    <xs:complexType name="pathway-enzyme-list-type">
+    <xs:complexType name="pathway-drug-type">
+    <xs:complexType name="pathway-drug-list-type">
+    <xs:complexType name="patent-type">
+    <xs:complexType name="patent-list-type">
+    <xs:complexType name="packager-type">
+    <xs:complexType name="packager-list-type">
+    <xs:complexType name="mixture-type">
+    <xs:complexType name="mixture-list-type">
+    <xs:complexType name="manufacturer-type">
+    <xs:complexType name="manufacturer-list-type">
+    <xs:complexType name="link-type">
+    <xs:complexType name="link-list-type">
+    <xs:complexType name="international-brand-type">
+    <xs:complexType name="international-brand-list-type">
+    <xs:complexType name="group-list-type">
+    <xs:complexType name="go-classifier-type">
+    <xs:complexType name="go-classifier-list-type">
+    <xs:complexType name="food-interaction-list-type">
+    <xs:complexType name="external-link-type">
+    <xs:complexType name="external-link-list-type">
+    <xs:complexType name="external-identifier-type">
+    <xs:complexType name="external-identifier-list-type">
+    <xs:complexType name="experimental-property-type">
+    <xs:complexType name="experimental-property-list-type">
+    <xs:complexType name="enzyme-type">
+    <xs:complexType name="enzyme-list-type">
+    <xs:complexType name="drugbank-type">
+    <xs:complexType name="drugbank-salt-id-type">
+    <xs:complexType name="drugbank-metabolite-id-type">
+    <xs:complexType name="drugbank-drug-id-type">
+    <xs:complexType name="drug-type">
+    <xs:complexType name="drug-interaction-type">
+    <xs:complexType name="drug-interaction-list-type">
+    <xs:complexType name="dosage-type">
+    <xs:complexType name="dosage-list-type">
+    <xs:complexType name="classification-type">
+    <xs:complexType name="category-type">
+    <xs:complexType name="category-list-type">
+    <xs:complexType name="carrier-type">
+    <xs:complexType name="carrier-list-type">
+    <xs:complexType name="calculated-property-type">
+    <xs:complexType name="calculated-property-list-type">
+    <xs:complexType name="atc-code-type">
+    <xs:complexType name="atc-code-list-type">
+    <xs:complexType name="atc-code-level-type">
+    <xs:complexType name="article-type">
+    <xs:complexType name="article-list-type">
+    <xs:complexType name="ahfs-code-list-type">
+    <xs:complexType name="affected-organism-list-type">
+    <xs:complexType name="action-list-type">
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:simpleType>
+    </xs:group>
+    </xs:element>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+    </xs:complexType>
+        <xs:simpleContent>
+        <xs:simpleContent>
+        <xs:simpleContent>
+        <xs:simpleContent>
+        <xs:simpleContent>
+        <xs:simpleContent>
+        <xs:simpleContent>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence>
+        <xs:sequence maxOccurs="unbounded" minOccurs="0">
+        <xs:sequence maxOccurs="unbounded" minOccurs="0">
+        <xs:sequence maxOccurs="6" minOccurs="1">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:string">
+        <xs:attribute name="version" type="xs:string" use="required">
+        <xs:attribute name="updated" type="xs:date" use="required"/>
+        <xs:attribute name="type" use="required">
+        <xs:attribute name="source" type="xs:string" use="required"/>
+        <xs:attribute name="position" type="xs:integer" use="optional"/>
+        <xs:attribute name="position" type="xs:integer" use="optional"/>
+        <xs:attribute name="position" type="xs:integer" use="optional"/>
+        <xs:attribute name="position" type="xs:integer" use="optional"/>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="exported-on" type="xs:date" use="required">
+        <xs:attribute name="created" type="xs:date" use="required"/>
+        <xs:attribute name="code" type="xs:string"/>
+        <xs:annotation>
+        <xs:annotation>
+        <xs:annotation>
+        <xs:annotation>
+        <xs:annotation>
+        <xs:annotation>
+        <xs:annotation>
+        <xs:annotation>
+        <xs:annotation>
+        <xs:annotation>
+        </xs:simpleContent>
+        </xs:simpleContent>
+        </xs:simpleContent>
+        </xs:simpleContent>
+        </xs:simpleContent>
+        </xs:simpleContent>
+        </xs:simpleContent>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:sequence>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:restriction>
+        </xs:attribute>
+        </xs:attribute>
+        </xs:attribute>
+        </xs:annotation>
+        </xs:annotation>
+        </xs:annotation>
+        </xs:annotation>
+        </xs:annotation>
+        </xs:annotation>
+        </xs:annotation>
+        </xs:annotation>
+        </xs:annotation>
+        </xs:annotation>
+            <xs:whiteSpace value="collapse"/>
+            <xs:whiteSpace value="collapse"/>
+            <xs:whiteSpace value="collapse"/>
+            <xs:simpleType>
+            <xs:pattern value="NUTR[0-9]{5}"/>
+            <xs:pattern value="EXPT[0-9]{5}"/>
+            <xs:pattern value="DB[0-9]{5}"/>
+            <xs:pattern value="DBSALT[0-9]{6}"/>
+            <xs:pattern value="DBMET[0-9]{5}"/>
+            <xs:pattern value="BTD[0-9]{5}"/>
+            <xs:pattern value="BIOD[0-9]{5}"/>
+            <xs:pattern value="APRD[0-9]{5}"/>
+            <xs:minLength value="1"/>
+            <xs:minLength value="1"/>
+            <xs:minLength value="1"/>
+            <xs:group ref="interactant-group"/>
+            <xs:group ref="interactant-group"/>
+            <xs:group ref="interactant-group"/>
+            <xs:group ref="interactant-group"/>
+            <xs:extension base="xs:string">
+            <xs:extension base="xs:string">
+            <xs:extension base="xs:string">
+            <xs:extension base="xs:string">
+            <xs:extension base="drugbank-salt-id-value">
+            <xs:extension base="drugbank-metabolite-id-value">
+            <xs:extension base="drugbank-drug-id-value">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="withdrawn"/>
+            <xs:enumeration value="vet_approved"/>
+            <xs:enumeration value="unknown"/>
+            <xs:enumeration value="solid"/>
+            <xs:enumeration value="pKa"/>
+            <xs:enumeration value="pKa (strongest basic)"/>
+            <xs:enumeration value="pKa (strongest acidic)"/>
+            <xs:enumeration value="nutraceutical"/>
+            <xs:enumeration value="no"/>
+            <xs:enumeration value="logS"/>
+            <xs:enumeration value="logS"/>
+            <xs:enumeration value="logP"/>
+            <xs:enumeration value="logP"/>
+            <xs:enumeration value="liquid"/>
+            <xs:enumeration value="investigational"/>
+            <xs:enumeration value="illicit"/>
+            <xs:enumeration value="gas"/>
+            <xs:enumeration value="experimental"/>
+            <xs:enumeration value="caco2 Permeability"/>
+            <xs:enumeration value="approved"/>
+            <xs:enumeration value="Wikipedia"/>
+            <xs:enumeration value="Water Solubility"/>
+            <xs:enumeration value="Water Solubility"/>
+            <xs:enumeration value="UniProtKB"/>
+            <xs:enumeration value="UniProtKB"/>
+            <xs:enumeration value="UniProt Accession"/>
+            <xs:enumeration value="US"/>
+            <xs:enumeration value="Traditional IUPAC Name"/>
+            <xs:enumeration value="Therapeutic Targets Database"/>
+            <xs:enumeration value="SMILES"/>
+            <xs:enumeration value="RxList"/>
+            <xs:enumeration value="Rule of Five"/>
+            <xs:enumeration value="Rotatable Bond Count"/>
+            <xs:enumeration value="Refractivity"/>
+            <xs:enumeration value="PubChem Substance"/>
+            <xs:enumeration value="PubChem Compound"/>
+            <xs:enumeration value="Polarizability"/>
+            <xs:enumeration value="Polar Surface Area (PSA)"/>
+            <xs:enumeration value="Physiological Charge"/>
+            <xs:enumeration value="PharmGKB"/>
+            <xs:enumeration value="PDRhealth"/>
+            <xs:enumeration value="PDB"/>
+            <xs:enumeration value="Number of Rings"/>
+            <xs:enumeration value="National Drug Code Directory"/>
+            <xs:enumeration value="Monoisotopic Weight"/>
+            <xs:enumeration value="Molecular Weight"/>
+            <xs:enumeration value="Molecular Weight"/>
+            <xs:enumeration value="Molecular Formula"/>
+            <xs:enumeration value="Molecular Formula"/>
+            <xs:enumeration value="Melting Point"/>
+            <xs:enumeration value="MDDR-Like Rule"/>
+            <xs:enumeration value="KEGG Drug"/>
+            <xs:enumeration value="KEGG Compound"/>
+            <xs:enumeration value="Isoelectric Point"/>
+            <xs:enumeration value="InChIKey"/>
+            <xs:enumeration value="InChI"/>
+            <xs:enumeration value="IUPHAR"/>
+            <xs:enumeration value="IUPHAR"/>
+            <xs:enumeration value="IUPAC Name"/>
+            <xs:enumeration value="Hydrophobicity"/>
+            <xs:enumeration value="Human Protein Reference Database (HPRD)"/>
+            <xs:enumeration value="HUGO Gene Nomenclature Committee (HGNC)"/>
+            <xs:enumeration value="H Bond Donor Count"/>
+            <xs:enumeration value="H Bond Acceptor Count"/>
+            <xs:enumeration value="Guide to Pharmacology"/>
+            <xs:enumeration value="Guide to Pharmacology"/>
+            <xs:enumeration value="Ghose Filter"/>
+            <xs:enumeration value="GeneCards"/>
+            <xs:enumeration value="GenBank"/>
+            <xs:enumeration value="GenBank Protein Database"/>
+            <xs:enumeration value="GenBank Gene Database"/>
+            <xs:enumeration value="GenAtlas"/>
+            <xs:enumeration value="FDA NDC"/>
+            <xs:enumeration value="Drugs.com"/>
+            <xs:enumeration value="Drugs Product Database (DPD)"/>
+            <xs:enumeration value="DPD"/>
+            <xs:enumeration value="ChemSpider"/>
+            <xs:enumeration value="ChemAxon"/>
+            <xs:enumeration value="ChEMBL"/>
+            <xs:enumeration value="ChEMBL"/>
+            <xs:enumeration value="ChEBI"/>
+            <xs:enumeration value="Canada"/>
+            <xs:enumeration value="Boiling Point"/>
+            <xs:enumeration value="Bioavailability"/>
+            <xs:enumeration value="BindingDB"/>
+            <xs:enumeration value="ALOGPS"/>
+            <xs:element name="volume-of-distribution" type="xs:string"/>
+            <xs:element name="value" type="xs:string"/>
+            <xs:element name="value" type="xs:string"/>
+            <xs:element name="url" type="xs:string"/>
+            <xs:element name="url" type="xs:string"/>
+            <xs:element name="url" type="xs:anyURI"/>
+            <xs:element name="unit" type="xs:string"/>
+            <xs:element name="uniprot-id" type="xs:string"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="uniprot-id" type="xs:string"/>
+            <xs:element name="uniprot-id" type="xs:string"/>
+            <xs:element name="uniprot-id" type="xs:string"/>
+            <xs:element name="unii" type="xs:string"/>
+            <xs:element name="unii" type="xs:string"/>
+            <xs:element name="transporters" type="transporter-list-type"/>
+            <xs:element name="transporter"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="transmembrane-regions" type="xs:string"/>
+            <xs:element name="toxicity" type="xs:string"/>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="theoretical-pi" type="xs:string"/>
+            <xs:element name="textbooks" type="textbook-list-type"/>
+            <xs:element name="textbook" type="textbook-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="targets" type="target-list-type"/>
+            <xs:element name="target" type="target-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="synthesis-reference" type="xs:string"/>
+            <xs:element name="synonyms" type="synonym-list-type"/>
+            <xs:element name="synonyms" type="polypeptide-synonym-list-type"/>
+            <xs:element name="synonym" type="xs:string"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="synonym" type="synonym-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="superclass" type="xs:string"/>
+            <xs:element name="substituent" type="xs:string"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="subclass" type="xs:string"/>
+            <xs:element name="strength" type="xs:string"/>
+            <xs:element name="strength" type="xs:string"/>
+            <xs:element name="state" type="state-type" minOccurs="0"/>
+            <xs:element name="started-marketing-on" type="xs:string"/>
+            <xs:element name="specific-function" type="xs:string"/>
+            <xs:element name="source" type="xs:string"/>
+            <xs:element name="source" type="product-source-type"/>
+            <xs:element name="source" type="calculated-property-source-type"/>
+            <xs:element name="snp-effects" type="snp-effect-list-type"/>
+            <xs:element name="snp-adverse-drug-reactions" type="snp-adverse-drug-reaction-list-type"/>
+            <xs:element name="smpdb-id" type="xs:string"/>
+            <xs:element name="signal-regions" type="xs:string"/>
+            <xs:element name="sequences" type="sequence-list-type"/>
+            <xs:element name="sequence">maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="sequence" type="xs:string"/>
+            <xs:element name="salts" type="salt-list-type"/>
+            <xs:element name="salt" type="salt-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="rs-id" type="xs:string"/>
+            <xs:element name="rs-id" type="xs:string"/>
+            <xs:element name="route-of-elimination" type="xs:string"/>
+            <xs:element name="route" type="xs:string"/>
+            <xs:element name="route" type="xs:string"/>
+            <xs:element name="right-element" type="reaction-element-type"/>
+            <xs:element name="resource" type="polypeptide-external-identifier-resource-type"/>
+            <xs:element name="resource" type="external-link-resource-type"/>
+            <xs:element name="resource" type="external-identifier-resource-type"/>
+            <xs:element name="references" type="reference-list-type"/>
+            <xs:element name="reactions" type="reaction-list-type"/>
+            <xs:element name="reaction"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="reaction" type="reaction-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="pubmed-id" type="xs:string"/>
+            <xs:element name="pubmed-id" type="xs:string"/>
+            <xs:element name="pubmed-id" type="xs:string"/>
+            <xs:element name="protein-name" type="xs:string"/>
+            <xs:element name="protein-name" type="xs:string"/>
+            <xs:element name="protein-binding" type="xs:string"/>
+            <xs:element name="property"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="property"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="products" type="product-list-type"/>
+            <xs:element name="product" type="product-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="prices" type="price-list-type"/>
+            <xs:element name="price" type="price-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="polypeptide"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="polypeptide"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="pharmacodynamics" type="xs:string"/>
+            <xs:element name="pfams" type="pfam-list-type"/>
+            <xs:element name="pfam" type="pfam-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="pediatric-extension" type="xs:boolean"/>
+            <xs:element name="pdb-entry" type="xs:string"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="pdb-entries" type="pdb-entry-list-type"/>
+            <xs:element name="pathways" type="pathway-list-type"/>
+            <xs:element name="pathway" type="pathway-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="patents" type="patent-list-type"/>
+            <xs:element name="patent" type="patent-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="packagers" type="packager-list-type"/>
+            <xs:element name="packager" type="packager-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="over-the-counter" type="xs:boolean"/>
+            <xs:element name="organism">
+            <xs:element name="organism" type="xs:string"/>
+            <xs:element name="number" type="xs:string"/>
+            <xs:element name="ndc-product-code" type="xs:string"/>
+            <xs:element name="ndc-id" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="msds" type="xs:anyURI" minOccurs="0"/>
+            <xs:element name="monoisotopic-mass" type="xs:float" minOccurs="0"/>
+            <xs:element name="monoisotopic-mass" type="xs:float" minOccurs="0"/>
+            <xs:element name="molecular-weight" type="xs:string"/>
+            <xs:element name="mixtures" type="mixture-list-type"/>
+            <xs:element name="mixture" type="mixture-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="metabolism" type="xs:string"/>
+            <xs:element name="mesh-id" type="xs:string"> </xs:element>
+            <xs:element name="mechanism-of-action" type="xs:string"/>
+            <xs:element name="manufacturers" type="manufacturer-list-type"/>
+            <xs:element name="manufacturer"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="locus" type="xs:string"/>
+            <xs:element name="links" type="link-list-type"/>
+            <xs:element name="link" type="link-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="level" type="atc-code-level-type"/>
+            <xs:element name="left-element" type="reaction-element-type"/>
+            <xs:element name="labeller" type="xs:string"/>
+            <xs:element name="known-action" type="known-action-type"/>
+            <xs:element name="kingdom" type="xs:string"/>
+            <xs:element name="kind" type="experimental-property-kind-type"/>
+            <xs:element name="kind" type="calculated-property-kind-type"/>
+            <xs:element name="isbn" type="xs:string"/>
+            <xs:element name="international-brands" type="international-brand-list-type"/>
+            <xs:element name="international-brand"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="inhibition-strength" type="xs:string"/>
+            <xs:element name="ingredients" type="xs:string"/>
+            <xs:element name="induction-strength" type="xs:string"/>
+            <xs:element name="indication" type="xs:string"/>
+            <xs:element name="inchikey" type="xs:string"/>
+            <xs:element name="identifier" type="xs:string"/>
+            <xs:element name="identifier" type="xs:string"/>
+            <xs:element name="identifier" type="xs:string"/>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="half-life" type="xs:string"/>
+            <xs:element name="groups" type="group-list-type"/>
+            <xs:element name="group" type="group-type"/>
+            <xs:element name="go-classifiers" type="go-classifier-list-type"/>
+            <xs:element name="go-classifier"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="generic" type="xs:boolean"/>
+            <xs:element name="general-references" type="reference-list-type"/>
+            <xs:element name="general-function" type="xs:string"/>
+            <xs:element name="gene-symbol" type="xs:string"/>
+            <xs:element name="gene-symbol" type="xs:string"/>
+            <xs:element name="gene-sequence" type="sequence-type" minOccurs="1"/>
+            <xs:element name="gene-name" type="xs:string"/>
+            <xs:element name="form" type="xs:string"/>
+            <xs:element name="food-interactions" type="food-interaction-list-type"/>
+            <xs:element name="food-interaction" type="xs:string"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="fda-label" type="xs:anyURI" minOccurs="0"/>
+            <xs:element name="fda-application-number" type="xs:string"/>
+            <xs:element name="external-links" type="external-link-list-type"/>
+            <xs:element name="external-link"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="external-identifiers" type="polypeptide-external-identifier-list-type"/>
+            <xs:element name="external-identifiers" type="external-identifier-list-type"/>
+            <xs:element name="external-identifier"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="external-identifier"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="expires" type="xs:string"/>
+            <xs:element name="experimental-properties" type="experimental-property-list-type"/>
+            <xs:element name="enzymes" type="reaction-enzyme-list-type"/>
+            <xs:element name="enzymes" type="pathway-enzyme-list-type"/>
+            <xs:element name="enzymes" type="enzyme-list-type"/>
+            <xs:element name="enzyme"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="enzyme" type="enzyme-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="ended-marketing-on" type="xs:string"/>
+            <xs:element name="effect" type="snp-effect-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="drugs" type="pathway-drug-list-type"/>
+            <xs:element name="drugbank-id"maxOccurs="unbounded" minOccurs="1" 
+            <xs:element name="drugbank-id" type="xs:string"/>
+            <xs:element name="drugbank-id" type="xs:string"/>
+            <xs:element name="drugbank-id" type="drugbank-salt-id-type" maxOccurs="unbounded">
+            <xs:element name="drugbank-id" type="drugbank-drug-id-type"/>
+            <xs:element name="drugbank-id" type="drugbank-drug-id-type"/>
+            <xs:element name="drug-interactions" type="drug-interaction-list-type"/>
+            <xs:element name="drug-interaction"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="drug" type="pathway-drug-type"/>maxOccurs="unbounded" minOccurs="1" 
+            <xs:element name="drug" type="drug-type" maxOccurs="unbounded"/>
+            <xs:element name="dpd-id" type="xs:string" nillable="true">
+            <xs:element name="dosages" type="dosage-list-type"/>
+            <xs:element name="dosage-form" type="xs:string"/>
+            <xs:element name="dosage" type="dosage-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="direct-parent" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="defining-change" type="xs:string"/>
+            <xs:element name="country" type="xs:string"/>
+            <xs:element name="country" type="product-country-type" maxOccurs="1"/>
+            <xs:element name="cost">
+            <xs:element name="company" type="xs:string"/>
+            <xs:element name="clearance" type="xs:string"/>
+            <xs:element name="classification" type="classification-type" minOccurs="0"/>
+            <xs:element name="class" type="xs:string"/>
+            <xs:element name="citation" type="xs:string"/>
+            <xs:element name="citation" type="xs:string"/>
+            <xs:element name="chromosome-location" type="xs:string"/>
+            <xs:element name="cellular-location" type="xs:string"/>
+            <xs:element name="category" type="xs:string"/>
+            <xs:element name="category" type="xs:string"/>
+            <xs:element name="category" type="xs:string"/>
+            <xs:element name="category" type="category-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="categories" type="category-list-type"/>
+            <xs:element name="cas-number" type="xs:string"/>
+            <xs:element name="cas-number" type="xs:string"/>
+            <xs:element name="carriers" type="carrier-list-type"/>
+            <xs:element name="carrier" type="carrier-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="calculated-properties"
+            <xs:element name="average-mass" type="xs:float" minOccurs="0"/>
+            <xs:element name="average-mass" type="xs:float" minOccurs="0"/>
+            <xs:element name="atc-codes" type="atc-code-list-type"/>
+            <xs:element name="atc-code" type="atc-code-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="articles" type="article-list-type">
+            <xs:element name="article" type="article-type"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="approved" type="xs:string"/>
+            <xs:element name="approved" type="xs:boolean"/>
+            <xs:element name="amino-acid-sequence" type="sequence-type" minOccurs="1"/>
+            <xs:element name="alternative-parent"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="allele" type="xs:string"/>
+            <xs:element name="allele" type="xs:string"/>
+            <xs:element name="ahfs-codes" type="ahfs-code-list-type"/>
+            <xs:element name="ahfs-code" type="xs:string"/>maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="affected-organisms" type="affected-organism-list-type"/>
+            <xs:element name="affected-organism"maxOccurs="unbounded" minOccurs="0" 
+            <xs:element name="adverse-reaction" type="xs:string"/>
+            <xs:element name="actions" type="action-list-type"/>
+            <xs:element name="action" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element name="absorption" type="xs:string"/>
+            <xs:documentation>This is the root element type for the DrugBank database schema.</xs:documentation>
+            <xs:documentation>This is the root element for the DrugBank database schema. DrugBank is a database on drug and drug-targets.</xs:documentation>
+            <xs:documentation>The salt DrugBank ID uniquely identifies a salt entry. Multiple IDs indicate a merged entry.</xs:documentation>
+            <xs:documentation>The price for the given drug in US or Canadian currency.</xs:documentation>
+            <xs:documentation>The metabolite DrugBank ID uniquely identifies a metabolite entry. Multiple IDs indicate a merged entry.</xs:documentation>
+            <xs:documentation>The DrugBank ID is used to uniquely identify a drug entry. There is a primary ID and several secondary IDs that come from older ID formats or merged entries.</xs:documentation>
+            <xs:documentation>Drugs are grouped into a category like approved, experimental, illict.</xs:documentation>
+            <xs:documentation>Drug products are currently only imported from the U.S. (FDA) and Canada (Canadian Drug Product Database, or DPD).</xs:documentation>
+            <xs:documentation>Drug products are currently only imported from the FDA and the Canadian Drug Product Database, or DPD.</xs:documentation>
+            <xs:documentation>Drug classification is obtained from ClassyFire (http://classyfire.wishartlab.com).</xs:documentation>
+            <xs:annotation>
+            <xs:annotation>
+            </xs:simpleType>
+            </xs:extension>
+            </xs:extension>
+            </xs:extension>
+            </xs:extension>
+            </xs:extension>
+            </xs:extension>
+            </xs:extension>
+            </xs:element>
+            </xs:element>
+            </xs:element>
+            </xs:element>
+            </xs:element>
+            </xs:annotation>
+            </xs:annotation>
+            />
+                type="xs:string"/>
+                type="xs:string"/>
+                type="transporter-type"/>
+                type="snp-adverse-drug-reaction-type"/>
+                type="reaction-enzyme-type"/>
+                type="polypeptide-type"/>
+                type="polypeptide-type"/>
+                type="polypeptide-external-identifier-type"/>
+                type="manufacturer-type"/>
+                type="international-brand-type"/>
+                type="go-classifier-type"/>
+                type="external-link-type"/>
+                type="external-identifier-type"/>
+                type="experimental-property-type"/>
+                type="drugbank-drug-id-type"> </xs:element>
+                type="drug-interaction-type"/>
+                type="calculated-property-type"/>
+                type="calculated-property-list-type"/>
+                minOccurs="0"/>
+                <xs:restriction base="xs:string">
+                <xs:documentation>The date the XML file was exported.</xs:documentation>
+                <xs:documentation>The DrugBank version for the exported XML file.</xs:documentation>
+                <xs:complexType>
+                <xs:complexType>
+                <xs:complexType>
+                <xs:attribute name="url" type="xs:anyURI"/>
+                <xs:attribute name="language" type="xs:string"/>
+                <xs:attribute name="generic" type="xs:boolean"/>
+                <xs:attribute name="coder" type="xs:string"/>
+                <xs:attribute name="code" type="xs:string" use="required"/>
+                <xs:attribute fixed="FASTA" name="format" type="xs:string"/>
+                <xs:attribute default="false" name="primary" type="xs:boolean"/>
+                <xs:attribute default="false" name="primary" type="xs:boolean"/>
+                <xs:attribute default="false" name="primary" type="xs:boolean"/>
+                <xs:annotation>
+                <xs:annotation>
+                </xs:restriction>
+                </xs:complexType>
+                </xs:complexType>
+                </xs:complexType>
+                </xs:annotation>
+                </xs:annotation>
+                    <xs:simpleContent>
+                    <xs:simpleContent>
+                    <xs:simpleContent>
+                    <xs:enumeration value="small molecule"/>
+                    <xs:enumeration value="biotech"/>
+                    <xs:documentation>DPD ID from the Canadian Drug Product Database. Only present for drugs that are marketed in Canada.</xs:documentation>
+                    <xs:documentation>Articles are typically PubMed references, although there are some references which do not have a PubMed ID.</xs:documentation>
+                    </xs:simpleContent>
+                    </xs:simpleContent>
+                    </xs:simpleContent>
+                        <xs:extension base="xs:string">
+                        <xs:extension base="xs:string">
+                        <xs:extension base="xs:string">
+                        </xs:extension>
+                        </xs:extension>
+                        </xs:extension>
+                            <xs:attribute name="ncbi-taxonomy-id" type="xs:string"/>
+                            <xs:attribute name="currency" type="xs:string" use="required"/>
+                            <xs:attribute fixed="FASTA" name="format" type="xs:string"/>

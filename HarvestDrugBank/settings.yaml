@@ -1,0 +1,2 @@
+inputFilePath: 'D:\tmp files\DrugBank.xml'
+mongodb: {host: 127.0.0.1, port: 27017, dbname: harvseting, collection: DrugBank}
