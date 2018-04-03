@@ -1,0 +1,26 @@
+The program requires the following libraries
+
+bson-3.0.4-javadoc.jar
+bson-3.0.4.jar
+commons-codec-1.9.jar
+commons-io-2.4.jar
+commons-logging-1.2.jar
+fluent-hc-4.5.1.jar
+gson-2.0.jar
+httpclient-4.5.1.jar
+httpclient-cache-4.5.1.jar
+httpclient-win-4.5.1.jar
+httpcore-4.4.3.jar
+httpmime-4.5.1.jar
+jna-4.1.0.jar
+jna-platform-4.1.0.jar
+json-simple-1.1.1.jar
+Library Dependencies.txt
+lucene-analyzers-common-5.3.1.jar
+lucene-core-5.3.1.jar
+lucene-queryparser-5.3.1.jar
+mongodb-driver-3.0.4.jar
+mongodb-driver-core-3.0.4-javadoc.jar
+mongodb-driver-core-3.0.4.jar
+mysql-connector-java-5.1.44-bin.jar
+snakeyaml-1.18.jar
